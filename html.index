@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imam | Android & Web Developer</title>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Poppins", sans-serif; }
+
+    body {
+      background: linear-gradient(-45deg, #007bff, #00bcd4, #00e676, #ff4081);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    .typewriter {
+      border-right: 3px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(25, end) 1s forwards, blink 0.8s step-end infinite;
+      display: inline-block;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 250px; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #007bff;
+      border-bottom: 3px solid #007bff;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .about p, .contact p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #f7f7f7;
+      margin: 10px 0;
+      padding: 12px;
+      border-left: 5px solid #007bff;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .skills li:hover {
+      transform: translateX(10px);
+      background: #e3f2fd;
+    }
+
+    .projects .card {
+      background: #fff;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .projects .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.9);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 32px; }
+      section { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>👋 Hi, I'm Imam</h1>
+    <p><span class="typewriter">Android & Web Developer</span></p>
+  </header>
+
+  <section class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I'm <b>Abul Kashem Emon (Imam)</b>, a passionate Android and Web developer from Chittagong, Bangladesh.
+      I love building clean, functional, and user-friendly apps.
+      My focus is on Android Studio (Java, Firebase) and creative UI design.
+    </p>
+  </section>
+
+  <section class="skills" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <ul>
+      <li>💻 Android App Development (Java, XML, Firebase, Firestore)</li>
+      <li>🌐 Web Development (HTML, CSS, JavaScript)</li>
+      <li>🎨 UI & UX Design</li>
+      <li>☁️ Firebase Authentication & Cloud Storage</li>
+      <li>📱 Play Store Publishing</li>
+    </ul>
+  </section>
+
+  <section class="projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+
+    <div class="card" data-aos="flip-left">
+      <h3>📱 Enter Shopping</h3>
+      <p>A modern eCommerce Android app built with Firebase and Java.</p>
+    </div>
+
+    <div class="card" data-aos="flip-right">
+      <h3>🎙️ Voice for Palestine</h3>
+      <p>An awareness app supporting freedom and education for Palestine.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in-up">
+      <h3>🧠 MindReader Pro</h3>
+      <p>A fun brain-reading illusion app with creepy sounds and animation.</p>
+    </div>
+  </section>
+
+  <section class="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:akeemon196@gmail.com">akeemon196@gmail.com</a></p>
+    <p>🌎 GitHub: <a href="https://github.com/imamemon" target="_blank">github.com/imamemon</a></p>
+    <p>📍 Location: Boalkhali, Chittagong, Bangladesh</p>
+  </section>
+
+  <footer>
+    © 2025 Imam | All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+  </script>
+
+</body>
+</html>
